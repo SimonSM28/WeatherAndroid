@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView;
+    public String moscow = "Москва";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

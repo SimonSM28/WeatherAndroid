@@ -1,150 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="@dimen/main_buttons"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_height="50dp"
-        android:text="Secon Activity"
-        android:gravity="center_horizontal" />
-
-    <TextView
-        android:background="@color/main_orange"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:padding="25dp"
-        android:textColor="#444509"
-        android:layout_width="wrap_content"
-        android:textSize="28dp"
-        android:drawableStart="@drawable/ic_yin_yang"
-        android:drawableEnd="@drawable/ic_yin_yang"
-        android:textIsSelectable="true"
-        android:layout_height="wrap_content"
-        android:hint="Введите имя"
-        android:inputType="number"
-        android:maxLines="2"
-        android:gravity="center"
-        android:layout_margin="25dp"/>
-    <TextView
-        android:background="@color/main_orange"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:padding="25dp"
-        android:textColor="#444509"
-        android:layout_width="wrap_content"
-        android:textSize="28dp"
-        android:layout_height="wrap_content"
-        android:text="Weather"
-        android:layout_margin="25dp"/>
-    <TextView
-        android:background="@color/main_orange"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:padding="25dp"
-        android:textColor="#444509"
-        android:layout_width="wrap_content"
-        android:textSize="28dp"
-        android:layout_height="wrap_content"
-        android:text="Weather"
-        android:layout_margin="25dp"/>
-    <TextView
-        android:background="@color/main_orange"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:padding="25dp"
-        android:layout_width="wrap_content"
-        android:textSize="28dp"
-        android:layout_height="wrap_content"
-        android:text="Weather"
-        android:layout_margin="25dp"/>
-    <TextView
-        android:background="@color/main_orange"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:padding="25dp"
-        android:textColor="#444509"
-        android:layout_width="wrap_content"
-        android:textSize="28dp"
-        android:layout_height="wrap_content"
-        android:text="Weather"
-        android:layout_margin="25dp"/>
-    <TextView
-        android:background="@color/main_orange"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:padding="25dp"
-        android:textColor="#444509"
-        android:layout_width="wrap_content"
-        android:textSize="28dp"
-        android:layout_height="wrap_content"
-        android:text="Weather"
-        android:layout_margin="25dp"/>
-
     <FrameLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="#771ab0d2"
-        android:layout_gravity="center"
-        android:layout_margin="10dp">
 
-        <ImageView
-            android:src="@drawable/ic_yin_yang"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </FrameLayout>
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        android:gravity="center">
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:textSize="28sp"
-            android:layout_gravity="left"
-            android:layout_marginBottom="10dp"
-            android:layout_margin="10dp"
-            android:background="@color/main_orange"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:text="Сема" />
+        android:layout_gravity="center|top"
+        android:layout_margin="15dp"
+        android:padding="15dp">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:textSize="28sp"
-            android:layout_gravity="right"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/main_orange"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:text="Вася" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="110dp">
 
-    </LinearLayout>
-</LinearLayout>
+            <TextView
+                android:id="@+id/moscow_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/moscow"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/temperature_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moscow_city"
+                android:padding="15dp"
+                android:text="-15"
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:layout_toEndOf="@+id/temperature_city"
+                android:layout_alignBottom="@+id/temperature_city"
+                android:id="@+id/Hummidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hummidity"
+                android:textColor="@drawable/freeze"/>
+
+        </RelativeLayout>
+    </FrameLayout>
 </ScrollView>
