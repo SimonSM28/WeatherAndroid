@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="humidity">Humidity</string>
+    <string name="temperature_moscow">-523 C</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind">Wind</string>
+    <string name="moscow">Moscow</string>
+    <string name="madrid">Madrid</string>
+    <string name="porto">Porto</string>
+    <string name="new_york">New York</string>
+    <string name="paris">Paris</string>
+    <string name="button_chose">CHOSE</string>
 </resources>
