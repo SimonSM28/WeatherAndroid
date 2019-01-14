@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|top"
+    android:layout_margin="15dp"
+    android:padding="15dp"
+    android:background="@color/blue_freeze">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/city_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/temperature_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city_id"
+            android:padding="15dp"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/humidity_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temperature_id"
+            android:textSize="45sp"
+            android:padding="15dp"/>
+        <TextView
+            android:id="@+id/wind_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humidity_id"
+            android:textSize="45sp"
+            android:padding="15dp"/>
+        <TextView
+            android:id="@+id/preasure_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wind_id"
+            android:textSize="45sp"
+            android:padding="15dp"
+            />
+    </RelativeLayout>
+
+</FrameLayout>
