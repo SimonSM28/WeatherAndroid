@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setContentView(new MyView(this));
         makeToast ("onCreate");
         CheckBox windCheck = findViewById(R.id.wind_check);
         TextView textView1 = findViewById(R.id.moscow_city);
