@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:layout_gravity="center|top"
     android:layout_margin="15dp"
-    android:padding="15dp">
+    android:padding="15dp"
+    android:background="@color/blue_freeze">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +18,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerHorizontal="true"
-            android:text="@string/moscow"
             android:textSize="60sp" />
 
         <TextView
@@ -26,14 +26,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/city_id"
             android:padding="15dp"
-            android:text="-15"
             android:textSize="60sp" />
 
         <TextView
             android:id="@+id/humidity_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="50%"
             android:layout_below="@+id/temperature_id"
             android:textSize="45sp"
             android:padding="15dp"/>
@@ -41,7 +39,6 @@
             android:id="@+id/wind_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20 m/s"
             android:layout_below="@+id/humidity_id"
             android:textSize="45sp"
             android:padding="15dp"/>
@@ -50,9 +47,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/wind_id"
-            android:text="512 ml"
             android:textSize="45sp"
             android:padding="15dp"
             />
     </RelativeLayout>
+
 </FrameLayout>

@@ -5,7 +5,8 @@
     android:layout_height="wrap_content">
 <RelativeLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorPrimary">
 
         <RelativeLayout
             android:id="@+id/moscow_id"
@@ -30,26 +31,26 @@
                 android:padding="5dp"
                 android:clickable="true"/>
 
-            <RadioButton
+            <CheckBox
                 android:layout_below="@+id/moscow_city"
-                android:id="@+id/wind"
+                android:id="@+id/wind_check"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/wind" />
 
-            <RadioButton
-                android:layout_toEndOf="@+id/wind"
-                android:layout_alignBottom="@+id/wind"
-                android:id="@+id/humidity"
+            <CheckBox
+                android:layout_toEndOf="@+id/wind_check"
+                android:layout_alignBottom="@+id/wind_check"
+                android:id="@+id/humidity_check"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/humidity" />
-            <RadioButton
-                android:layout_toEndOf="@+id/humidity"
-                android:layout_alignBottom="@+id/humidity"
-                android:id="@+id/pressure_city"
+            <CheckBox
+                android:layout_toEndOf="@+id/humidity_check"
+                android:layout_alignBottom="@+id/humidity_check"
+                android:id="@+id/pressure_city_check"
                 android:padding="5dp"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -62,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:padding="15dp"
-            android:background="@drawable/whole_border">
+            android:background="@drawable/whole_border"
+            android:backgroundTint="@color/main_orange">
 
             <TextView
                 android:id="@+id/madrid_city"
@@ -74,9 +76,10 @@
                 android:textSize="30sp"
                 android:background="@drawable/border"
                 android:padding="5dp"
-                android:clickable="true"/>
+                android:clickable="true"
+                android:backgroundTint="@color/blue_freeze"/>
 
-            <RadioButton
+            <CheckBox
                 android:layout_below="@+id/madrid_city"
                 android:id="@+id/wind1"
                 android:layout_width="100dp"
@@ -84,7 +87,7 @@
                 android:padding="5dp"
                 android:text="@string/wind" />
 
-            <RadioButton
+            <CheckBox
                 android:layout_toEndOf="@+id/wind1"
                 android:layout_alignBottom="@+id/wind1"
                 android:id="@+id/humidity1"
@@ -92,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/humidity" />
-            <RadioButton
+            <CheckBox
                 android:layout_toEndOf="@+id/humidity1"
                 android:layout_alignBottom="@+id/humidity1"
                 android:id="@+id/pressure_city1"
@@ -108,7 +111,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:padding="15dp"
-        android:background="@drawable/whole_border">
+        android:background="@drawable/whole_border"
+        android:backgroundTint="@color/main_orange">
 
         <TextView
             android:id="@+id/porto_city"
@@ -120,9 +124,10 @@
             android:textSize="30sp"
             android:background="@drawable/border"
             android:padding="5dp"
-            android:clickable="true"/>
+            android:clickable="true"
+            android:backgroundTint="@color/blue_freeze"/>
 
-        <RadioButton
+        <CheckBox
             android:layout_below="@+id/porto_city"
             android:id="@+id/wind2"
             android:layout_width="100dp"
@@ -130,7 +135,7 @@
             android:padding="5dp"
             android:text="@string/wind" />
 
-        <RadioButton
+        <CheckBox
             android:layout_toEndOf="@+id/wind2"
             android:layout_alignBottom="@+id/wind2"
             android:id="@+id/humidity2"
@@ -138,7 +143,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="@string/humidity" />
-        <RadioButton
+        <CheckBox
             android:layout_toEndOf="@+id/humidity2"
             android:layout_alignBottom="@+id/humidity2"
             android:id="@+id/pressure_city2"
@@ -154,7 +159,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:padding="15dp"
-        android:background="@drawable/whole_border">
+        android:background="@drawable/whole_border"
+        android:backgroundTint="@color/main_orange">
 
         <TextView
             android:id="@+id/new_york_city"
@@ -166,9 +172,10 @@
             android:textSize="30sp"
             android:background="@drawable/border"
             android:padding="5dp"
-            android:clickable="true"/>
+            android:clickable="true"
+            android:backgroundTint="@color/blue_freeze"/>
 
-        <RadioButton
+        <CheckBox
             android:layout_below="@+id/new_york_city"
             android:id="@+id/wind3"
             android:layout_width="100dp"
@@ -176,7 +183,7 @@
             android:padding="5dp"
             android:text="@string/wind" />
 
-        <RadioButton
+        <CheckBox
             android:layout_toEndOf="@+id/wind3"
             android:layout_alignBottom="@+id/wind3"
             android:id="@+id/humidity3"
@@ -184,7 +191,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="@string/humidity" />
-        <RadioButton
+        <CheckBox
             android:layout_toEndOf="@+id/humidity3"
             android:layout_alignBottom="@+id/humidity3"
             android:id="@+id/pressure_city3"
@@ -200,7 +207,8 @@
         android:padding="15dp"
         android:background="@drawable/whole_border"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/main_orange">
 
         <TextView
             android:id="@+id/paris_city"
@@ -212,9 +220,10 @@
             android:textSize="30sp"
             android:background="@drawable/border"
             android:padding="5dp"
-            android:clickable="true"/>
+            android:clickable="true"
+            android:backgroundTint="@color/blue_freeze"/>
 
-        <RadioButton
+        <CheckBox
             android:layout_below="@+id/paris_city"
             android:id="@+id/wind4"
             android:layout_width="100dp"
@@ -222,7 +231,7 @@
             android:padding="5dp"
             android:text="@string/wind" />
 
-        <RadioButton
+        <CheckBox
             android:layout_toEndOf="@+id/wind4"
             android:layout_alignBottom="@+id/wind4"
             android:id="@+id/humidity4"
@@ -230,7 +239,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="@string/humidity" />
-        <RadioButton
+        <CheckBox
             android:layout_toEndOf="@+id/humidity4"
             android:layout_alignBottom="@+id/humidity4"
             android:id="@+id/pressure_city4"
